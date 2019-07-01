@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html style="-webkit-app-region: drag">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <script>window.$ = window.jQuery = require('jquery');</script>
+  <script src="ui.js"></script>
+  <style>
+  </style>
+</head>
+
+<body>
+  <div>
+    <div style="display: flex; flex-direction: row; justify-content: space-between">
+      <div style="color:white;" id="settings_click">
+        Settings
+      </div>
+      <div style="color:white;" id="close">
+        x
+      </div>
+    </div>
+    <div id="settings" style="color:white">
+      <input type="text">
+      <button>Set Location</button>
+    </div>
+    <div id="main">
+      <div style="display: flex; flex-direction: row; justify-content: space-between">
+        <div>
+            <h3 style="color: goldenrod" id="location"></h3>
+        </div>
+        <div>
+            <h3 style="color: goldenrod" id="date"></h3>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: row; border: 1px solid greenyellow">
+        <div>
+          <img id="big-image" height="100" width="100" />
+        </div>
+        <div style="color: goldenrod; font-size: 30px;">
+          <table>
+            <tr style="font-size: 30px">
+              <td id="temp">
+
+              </td>
+            </tr>
+            <tr style="font-size: 12px">
+              <td id="wind">
+
+              </td>
+            </tr>
+            <tr style="font-size: 12px">
+              <td id="pressure">
+
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div>
+          <table id="data" style="color: goldenrod"></table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html
